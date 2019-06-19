@@ -11,13 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Once Webpack is running, refresh the window and you're golden
 
 
-## Code scaffolding
-
-1. `npm install -g @angular/cli`
-1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-
-## Build
+## Building for distribution
 
 1. `npm run build:clean` will delete your `./dist` and `/dist-ng` folders
 1. `npm run build:ng` will build just your Angular app for distribution (`./dist-ng`)
@@ -35,6 +29,12 @@ They take a long time. If you do `npm run build` expect it to take 10-15 minutes
 The following instructions came from the Angular CLI, I haven't tested them yet though.
 
 * * *
+
+
+## Code scaffolding
+
+1. `npm install -g @angular/cli`
+1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 
 ## Running unit tests
