@@ -17,16 +17,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 
+## Build
+
+1. `npm run build:clean` will delete your `./dist` and `/dist-ng` folders
+1. `npm run build:ng` will build just your Angular app for distribution (`./dist-ng`)
+1. `npm run build:nw` will build just your NW.js app (`./dist`)
+1. `npm run build` is your all-in-one command. It will clean out the old dist folders and build your Angular and NW.js app
+
+
+# **IMPORTANT NOTE ABOUT BUILDS!!!**
+
+They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be changed based on changing the build params in the `package.json`.
+
+
 * * *
 
 The following instructions came from the Angular CLI, I haven't tested them yet though.
 
 * * *
-
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 
 ## Running unit tests

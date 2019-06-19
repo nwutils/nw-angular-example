@@ -13,7 +13,7 @@ export class AppComponent {
     'You are running NW.js (v' + window.nw.process.versions.nw + '), ' +
     'Node.js (v' + window.nw.process.versions.node + '), ' +
     'Chromium (v' + window.nw.process.versions.chromium + '), ' +
-    'and Angular (' + window.nw.App.manifest.dependencies['@angular/core'] + ').';
+    'and Angular 8.';
 
   public links: any;
 
