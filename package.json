@@ -61,7 +61,7 @@
   },
   "build": {
     "nwVersion": "v0.39.1",
-    "nwFlavor": "sdk",
+    "nwFlavor": "normal",
     "targets": [
       "zip",
       "nsis7z"
@@ -78,6 +78,7 @@
       "browserslist",
       "karma.conf.js",
       "package-lock.json",
+      "screenshot.png",
       "tsconfig.app.json",
       "tsconfig.json",
       "tsconfig.spec.json",

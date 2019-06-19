@@ -3,6 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 
+![A Screenshot of the default app running on windows](screenshot.png)
+
+
 ## Running Locally for development
 
 1. `npm install`
