@@ -1,0 +1,9 @@
+
+.main {
+  text-align: center;
+}
+
+.main,
+.links {
+  font-family: sans-serif;
+}
