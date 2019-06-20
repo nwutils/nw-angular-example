@@ -50,6 +50,7 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "nw": "^0.39.1-sdk",
     "nwjs-builder-phoenix": "^1.15.0",
+    "nwjs-types": "^1.0.0",
     "protractor": "~5.4.0",
     "rimraf": "^2.6.3",
     "rxjs": "~6.4.0",
