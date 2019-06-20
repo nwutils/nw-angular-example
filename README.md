@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. `npm install`
 1. `npm start`
-1. An empty window while pop up while Webpack to warm ups
+1. An empty window will pop up while Webpack warm ups
 1. Once Webpack is running, refresh the window and you're golden
 
 
