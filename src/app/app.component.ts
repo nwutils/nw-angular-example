@@ -8,16 +8,17 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'nw-angular';
+  isDev = window.nw.process.versions['nw-flavor'] === 'sdk';
 
   versions = '' +
-    'You are running NW.js (v' + window.nw.process.versions.nw + '), ' +
+    'You are running NW.js (v' + window.nw.process.versions.nw + ' ' + window.nw.process.versions['nw-flavor'] + '), ' +
     'Node.js (v' + window.nw.process.versions.node + '), ' +
     'Chromium (v' + window.nw.process.versions.chromium + '), ' +
-    'and Angular 8.';
+    'and Angular (v8.0.3).';
 
   public links: any;
 
-  constructor() {
+  constructor () {
     this.links = [
       {
         title: 'Angular Tutorial',
@@ -34,8 +35,13 @@ export class AppComponent {
     ]
   }
 
-  public open(evt, link) {
+  public open (evt, link) {
     evt.preventDefault();
     window.nw.Shell.openExternal(link.url);
+  }
+
+  public openDevTools (evt) {
+    evt.preventDefault();
+    window.nw.Window.get().showDevTools();
   }
 }
