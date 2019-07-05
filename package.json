@@ -19,6 +19,7 @@
     "build:ng": "ng build --prod --output-path ./dist-ng",
     "build:nw": "build --concurrent --tasks win-x86,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
     "run:win": "dist\\nw-angular-1.0.0-win-x86\\nw-angular.exe",
+    "generate": "ng generate",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

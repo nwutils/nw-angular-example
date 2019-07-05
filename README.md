@@ -27,27 +27,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be changed based on changing the build params in the `package.json`.
 
 
-* * *
+## Automated quality enforcment
 
-The following instructions came from the Angular CLI, I haven't tested them yet though.
-
-* * *
+1. **Linting:** `npm run lint` - tslint.json
+1. **Unit tests:** `npm test` - [Karma](https://karma-runner.github.io).
+1. **End-to-end:** `npm run e2e` - Accepting PR to fix these tests. [Protractor](http://www.protractortest.org/).
 
 
 ## Code scaffolding
 
-1. `npm install -g @angular/cli`
-1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Docs](https://angular.io/cli/generate)
 
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. `npm run generate -- component component-name` to generate a new component.
+1. `npm run generate -- directive directive-name` to generate a new directive.
+1. `npm run generate -- pipe pipe-name` to generate a new pipe.
+1. `npm run generate -- service service-name` to generate a new service.
+1. `npm run generate -- class class-name` to generate a new class.
+1. `npm run generate -- guard guard-name` to generate a new guard.
+1. `npm run generate -- interface interface-name` to generate a new interface.
+1. `npm run generate -- enum enum-name` to generate a new enum.
+1. `npm run generate -- module module-name` to generate a new module.
 
 
 ## Further help
