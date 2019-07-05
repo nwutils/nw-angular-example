@@ -19,7 +19,8 @@ const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
 
-global['nw'] = {
+const nw = 'nw';
+global[nw] = {
   process: {
     versions: {
       nw: '0.39.2',

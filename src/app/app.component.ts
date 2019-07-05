@@ -32,7 +32,7 @@ export class AppComponent {
         title: 'NW.js Documentation',
         url: 'https://nwjs.io'
       }
-    ]
+    ];
   }
 
   public open (evt, link) {
