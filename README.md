@@ -24,19 +24,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # **IMPORTANT NOTE ABOUT BUILDS!!!**
 
-They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be changed based on changing the build params in the `package.json`.
+They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes.
 
 
 ## Automated quality enforcment
 
 1. **Linting:** `npm run lint` - tslint.json
 1. **Unit tests:** `npm test` - [Karma](https://karma-runner.github.io).
-1. **End-to-end:** `npm run e2e` - Accepting PR to fix these tests. [Protractor](http://www.protractortest.org/).
+1. **End-to-end:** `npm run e2e` - Accepting PR to fix these tests. - [Protractor](http://www.protractortest.org).
 
 
 ## Code scaffolding
 
-[Docs](https://angular.io/cli/generate)
+[ng generate Docs](https://angular.io/cli/generate)
 
 1. `npm run generate -- component component-name` to generate a new component.
 1. `npm run generate -- directive directive-name` to generate a new directive.
