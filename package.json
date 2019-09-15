@@ -1,6 +1,6 @@
 {
   "name": "nw-angular",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "http://localhost:8964",
   "node-remote": "http://localhost:8964",
   "node-main": "",
@@ -19,8 +19,8 @@
     "build:clean": "rimraf ./dist-ng ./dist",
     "build:ng": "ng build --prod --output-path ./dist-ng",
     "build:nw": "build --concurrent --tasks win-x86,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
-    "build:win": "build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
-    "run:win": "dist\\nw-angular-1.0.0-win-x86\\nw-angular.exe",
+    "build:win": "npm run build:ng && build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
+    "run:win": "dist\\nw-angular-1.1.0-win-x86\\nw-angular.exe",
     "generate": "ng generate",
     "test": "ng test",
     "lint": "ng lint",
