@@ -13,7 +13,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"ng serve --port=8964\" \"nw .\"",
+    "start": "concurrently \"npm run start:web\" \"nw .\"",
+    "start:web": "ng serve --port=8964",
     "build": "npm run build:clean && npm run build:ng && npm run build:nw",
     "build:clean": "rimraf ./dist-ng ./dist",
     "build:ng": "ng build --prod --output-path ./dist-ng",
