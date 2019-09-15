@@ -20,12 +20,29 @@ const context = require.context('./', true, /\.spec\.ts$/);
 context.keys().map(context);
 
 const nw = 'nw';
-global[nw] = {
+const nwMock = {
   process: {
     versions: {
-      nw: '0.39.2',
-      node: '12.3.1',
-      chromium: '75.0.3770.90'
+      nw: '0.40.2',
+      'nw-flavor': 'sdk',
+      node: '12.9.1',
+      chromium: '76.0.3809.132'
+    }
+  },
+  Shell: {
+    openExternal () {
+      return undefined;
+    }
+  },
+  Window: {
+    get () {
+      return {
+        showDevTools () {
+          return undefined;
+        }
+      };
     }
   }
 };
+global[nw] = nwMock;
+window[nw] = nwMock;
