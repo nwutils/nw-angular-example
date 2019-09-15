@@ -19,6 +19,7 @@
     "build:clean": "rimraf ./dist-ng ./dist",
     "build:ng": "ng build --prod --output-path ./dist-ng",
     "build:nw": "build --concurrent --tasks win-x86,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
+    "build:win": "build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
     "run:win": "dist\\nw-angular-1.0.0-win-x86\\nw-angular.exe",
     "generate": "ng generate",
     "test": "ng test",
@@ -26,6 +27,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.2",
     "@angular/animations": "~8.2.4",
@@ -101,13 +105,13 @@
       "node-main": "server.js"
     },
     "win": {
-      "icon": "assets/icon.ico"
+      "icon": "assets/icon-256.ico"
     },
     "mac": {
       "icon": "assets/icon.icns"
     },
     "nsis": {
-      "icon": "assets/icon.ico",
+      "icon": "assets/icon-256.ico",
       "unIcon": "assets/icon.ico",
       "languages": [
         "English"
@@ -115,8 +119,5 @@
       "diffUpdaters": false,
       "hashCalculation": true
     }
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }
