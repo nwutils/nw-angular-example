@@ -10,8 +10,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. `npm install`
 1. `npm start`
-1. An empty window will pop up while Webpack warm ups
-1. Once Webpack is running, refresh the window and you're golden
+1. Webpack will spin up (takes a moment) then a window will pop up
+
+You can also run this repo in a regular browser with `npm run start:web`, but will need to add conditionals into your code to skip desktop-specific code (`if (window.nw) {}`).
 
 
 ## Building for distribution
@@ -24,7 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # **IMPORTANT NOTE ABOUT BUILDS!!!**
 
-They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes.
+They take a long time. If you do `npm run build` expect it to take 10-15 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes. You can also remove the `--concurrent` from the `build:nw` script to see a status of what has been completed. This will allow individual pieces to finish faster, but the entire build will take longer.
 
 
 ## Automated quality enforcment
@@ -51,4 +52,4 @@ They take a long time. If you do `npm run build` expect it to take 10-15 minutes
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `npm run ng -- help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
