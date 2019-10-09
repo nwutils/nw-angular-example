@@ -1,4 +1,18 @@
 {
+  "ManifestComments": [
+    "Only add dependencies that you want shipped to the end user, for everything else, use devDependencies, including things that will be bundled by webpack.",
+    "NW.js requires a name and a main, everything else is optional.",
+    "The build section is used by nwjs-builder-phoenix, see it's documentation for more info",
+    "Though for development, we point to localhost, the dist version points directly to files on disk. You can change this by:",
+    [
+      "1. Add a web server dependency",
+      "2. Create a server.js file to run a local webserver on port 8965",
+      "3. Point build.overriddenProperties.node-main to 'node server.js'. This will run before the NW.js window is launched.",
+      "4. Point the build.overriddenProperties.main to 'http://localhost:8965'",
+      "5. Point the build.overriddenProperties.node-remote to 'http://localhost:8965'. To allow NW.js and Node.js access from the DOM.",
+      "6. Remove 'node-remote' from build.strippedProperties"
+    ]
+  ],
   "name": "nw-angular",
   "version": "1.1.0",
   "main": "http://localhost:8964",
