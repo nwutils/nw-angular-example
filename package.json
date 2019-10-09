@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "main": "http://localhost:8964",
   "node-remote": "http://localhost:8964",
-  "node-main": "",
   "window": {
     "width": 960,
     "height": 600,
@@ -28,7 +27,6 @@
   },
   "private": true,
   "dependencies": {
-    "express": "^4.17.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.8",
@@ -94,15 +92,15 @@
       "tslint.json"
     ],
     "strippedProperties": [
-      "chromium-args",
+      "ManifestComments",
+      "node-remote",
       "scripts",
       "devDependencies",
       "build"
     ],
     "overriddenProperties": {
-      "main": "http://localhost:8965",
-      "node-remote": "http://localhost:8965",
-      "node-main": "server.js"
+      "main": "dist-ng/index.html",
+      "node-remote": ""
     },
     "win": {
       "icon": "assets/icon-256.ico"
