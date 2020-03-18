@@ -23,10 +23,10 @@ const nw = 'nw';
 const nwMock = {
   process: {
     versions: {
-      nw: '0.40.2',
+      nw: '0.44.4',
       'nw-flavor': 'sdk',
-      node: '12.9.1',
-      chromium: '76.0.3809.132'
+      node: '13.10.1',
+      chromium: '80.0.3987.132'
     }
   },
   Shell: {
