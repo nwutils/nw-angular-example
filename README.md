@@ -1,6 +1,6 @@
 # NW.js and Angular CLI example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8. Though dependencies have been updated since then. You'll likely want to clone from `master` rather than use the latest release. Here is the [diff between latest release and master](https://github.com/nwutils/nw-angular-cli-example/compare/v1.2.0...master).
 
 
 ![A Screenshot of the default app running on Windows](screenshot.png)
