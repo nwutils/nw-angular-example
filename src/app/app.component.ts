@@ -14,7 +14,7 @@ export class AppComponent {
     'You are running NW.js (v' + window.nw.process.versions.nw + ' ' + window.nw.process.versions['nw-flavor'] + '), ' +
     'Node.js (v' + window.nw.process.versions.node + '), ' +
     'Chromium (v' + window.nw.process.versions.chromium + '), ' +
-    'and Angular (v9.0.6).';
+    'and Angular (v12.3.1).';
 
   public links: any;
 
