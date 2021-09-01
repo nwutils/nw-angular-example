@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable object-shorthand */
+/* eslint-disable prefer-arrow/prefer-arrow-functions */
+
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/dist/zone-testing';
@@ -30,14 +34,14 @@ const nwMock = {
     }
   },
   Shell: {
-    openExternal () {
+    openExternal: function () {
       return undefined;
     }
   },
   Window: {
-    get () {
+    get: function () {
       return {
-        showDevTools () {
+        showDevTools: function () {
           return undefined;
         }
       };
