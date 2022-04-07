@@ -53,3 +53,10 @@ They take a long time. If you do `npm run build` expect it to take 10-15 minutes
 ## Further help
 
 To get more help on the Angular CLI use `npm run ng -- help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Alternatives
+
+* [NW.js + Angular-CLI + Better-SQLite3](https://github.com/vatsalkgor/nw-better-sqlite3-boilerplate) - A fork of this repo with an example of SQLite added.
+* [NW.js + Angular 1.2](https://github.com/jgrenon/angular-desktop-app) - From 2014
+* [NW.js + Angular 1.4](https://github.com/vhpoet/nwjs-boilerplate) - From 2015
