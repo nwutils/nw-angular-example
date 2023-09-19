@@ -43,7 +43,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.1.4",
+    "@angular-devkit/build-angular": "^12.0.0",
     "@angular-eslint/builder": "12.3.1",
     "@angular-eslint/eslint-plugin": "12.3.1",
     "@angular-eslint/eslint-plugin-template": "12.3.1",
