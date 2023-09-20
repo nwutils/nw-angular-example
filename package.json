@@ -29,7 +29,7 @@
     "ng": "ng",
     "lint": "ng lint",
     "test": "ng test",
-    "start": "concurrently npm:dev:ng npm:dev:nw",
+    "start": "concurrently --kill-other npm:dev:ng npm:dev:nw",
     "dev:ng": "ng serve",
     "dev:nw": "wait-on -c waitOn.config.json http://localhost:8964 && nw .",
     "build": "npm run build:ng && npm run build:nw",
