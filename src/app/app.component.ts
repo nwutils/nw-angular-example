@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'nw-angular';
+  title = 'nw-angular-example';
   isDev = window.nw.process.versions['nw-flavor'] === 'sdk';
 
   versions = '' +
