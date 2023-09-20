@@ -1,6 +1,6 @@
 declare global {
     interface Window {
-        nw: any;
+        nw: object;
     }
 }
 
