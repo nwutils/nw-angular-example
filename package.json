@@ -34,9 +34,7 @@
     "dev:nw": "wait-on -c waitOn.config.json http://localhost:8964 && nw .",
     "build": "npm run build:ng && npm run build:nw",
     "build:ng": "ng build --output-path ./dist-ng",
-    "build:nw": "node hooks/pre.nw.mjs && nwbuild --outDir=./dist-nw --no-glob ./dist-ng",
-    "build:win": "npm run build:ng && build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
-    "run:win": "dist\\nw-angular-1.3.0-win-x86\\nw-angular.exe"
+    "build:nw": "node hooks/pre.nw.mjs && nwbuild --outDir=./dist-nw --no-glob ./dist-ng"
   },
   "private": true,
   "devDependencies": {
