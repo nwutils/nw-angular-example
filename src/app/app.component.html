@@ -7,24 +7,6 @@
   <div>
     {{ versions }}
   </div>
-  <button
-    *ngIf="isDev"
-    class="dev-tools"
-    (click)="openDevTools($event)"
-  >
-    Open Dev Tools
-  </button>
-</div>
-
-<div class="links">
-  <h2>Here are some links to help you start: </h2>
-  <ul>
-    <li *ngFor="let link of links">
-      <h2>
-        <a href="#" (click)="open($event, link)">{{ link.title }}</a>
-      </h2>
-    </li>
-  </ul>
 </div>
 
 <router-outlet></router-outlet>

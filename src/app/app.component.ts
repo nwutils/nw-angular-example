@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+type LinkType = {
+  title: string,
+  url: string,
+};
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,18 +12,17 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'nw-angular';
-  isDev = window.nw.process.versions['nw-flavor'] === 'sdk';
+  title = 'nw-angular-example';
 
   versions = '' +
-    'You are running NW.js (v' + window.nw.process.versions.nw + ' ' + window.nw.process.versions['nw-flavor'] + '), ' +
-    'Node.js (v' + window.nw.process.versions.node + '), ' +
-    'Chromium (v' + window.nw.process.versions.chromium + '), ' +
-    'and Angular (v12.3.1).';
+    'You are running NW.js (v0.80.0-sdk)' +
+    'Node.js (v20.5.1), ' +
+    'Chromium (v117.0.5938.63), ' +
+    'and Angular (v16.3.1).';
 
-  public links: any;
+  public links: LinkType[];
 
-  constructor () {
+  constructor() {
     this.links = [
       {
         title: 'Angular Tutorial',
@@ -35,13 +39,13 @@ export class AppComponent {
     ];
   }
 
-  public open (evt, link) {
-    evt.preventDefault();
-    window.nw.Shell.openExternal(link.url);
-  }
+  // public open(event: Event, link: LinkType) {
+  //   event.preventDefault();
+  //   window.nw.Shell.openExternal(link.url);
+  // }
 
-  public openDevTools (evt) {
-    evt.preventDefault();
-    window.nw.Window.get().showDevTools();
-  }
+  // public openDevTools(event: Event) {
+  //   event.preventDefault();
+  //   window.nw.Window.get().showDevTools();
+  // }
 }
