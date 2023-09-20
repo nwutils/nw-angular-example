@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
+type LinkType = {
+  title: string,
+  url: string,
+};
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
-  type LinkType = {
-    title: string,
-    url: string,
-  };
 
 export class AppComponent {
   title = 'nw-angular-example';
