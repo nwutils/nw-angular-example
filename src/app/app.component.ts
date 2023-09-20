@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
+  type LinkType = {
+    title: string,
+    url: string,
+  };
+
 export class AppComponent {
   title = 'nw-angular-example';
   isDev = window.nw.process.versions['nw-flavor'] === 'sdk';
@@ -16,9 +21,9 @@ export class AppComponent {
     'Chromium (v' + window.nw.process.versions.chromium + '), ' +
     'and Angular (v12.3.1).';
 
-  public links: any;
+  public links: LinkType[];
 
-  constructor () {
+  constructor() {
     this.links = [
       {
         title: 'Angular Tutorial',
@@ -35,13 +40,13 @@ export class AppComponent {
     ];
   }
 
-  public open (evt, link) {
-    evt.preventDefault();
+  public open(event: Event, link: LinkType) {
+    event.preventDefault();
     window.nw.Shell.openExternal(link.url);
   }
 
-  public openDevTools (evt) {
-    evt.preventDefault();
+  public openDevTools(event: Event) {
+    event.preventDefault();
     window.nw.Window.get().showDevTools();
   }
 }
