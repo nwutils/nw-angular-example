@@ -23,7 +23,8 @@
       "ES2022",
       "dom"
     ],
-    "typeRoots": ["./src/types"]
+    "typeRoots": ["./src/types"],
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
