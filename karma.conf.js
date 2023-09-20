@@ -1,8 +1,11 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-const puppeteer = require('puppeteer');
-process.env.CHROME_BIN = puppeteer.executablePath();
+const { resolve } = require('node:path');
+const {platform} = require('node:process');
+// const puppeteer = require('puppeteer');
+// process.env.CHROME_BIN = puppeteer.executablePath();
+process.env.CHROME_BIN = resolve("node_modules", "nw", "nwjs", `chromedriver${platform === "win32" ? ".exe": ""}`);
 
 module.exports = function (config) {
   config.set({
