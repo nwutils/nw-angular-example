@@ -60,7 +60,7 @@
     "@angular/router": "^16.2.5",
     "@types/chrome": "^0.0.246",
     "@types/jasmine": "^4.3.6",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.17.18",
     "@types/nw.js": "^0.13.17",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
