@@ -17,11 +17,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3.8.1
         with:
-          node-version: "20.5.1"
+          node-version: "20.7.0"
           cache: "npm"
       - name: Install dependencies
         run: npm ci
-      - name: Lint
+      - name: Check for linting errors
         run: npm run lint
-      - name: Test project
+      - name: Check for build errors
+        run: npm run build
+      - name: Run test suite
         run: npm test
