@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "saturday"
+    versioning-strategy: increase
     groups:
       npm:
         patterns:
