@@ -30,6 +30,7 @@
     "lint": "ng lint",
     "test": "ng test",
     "start": "concurrently --kill-other npm:dev:ng npm:dev:nw",
+    "postinstall": "npx base-volta-off-of-nwjs",
     "dev:ng": "ng serve",
     "dev:nw": "wait-on -c waitOn.config.json http://localhost:8964 && nw .",
     "build": "npm run build:ng && npm run build:nw",
@@ -37,7 +38,9 @@
     "build:nw": "node hooks/pre.nw.mjs && nwbuild --outDir=./dist-nw --no-glob ./dist-ng"
   },
   "private": true,
-  "packageManager": "npm@10.2.0",
+  "volta": {
+    "node": "20.7.0"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.6",
     "@angular-eslint/builder": "^17.1.1",
