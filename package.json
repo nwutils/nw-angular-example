@@ -30,7 +30,7 @@
     "lint": "ng lint",
     "test": "ng test",
     "start": "concurrently --kill-other npm:dev:ng npm:dev:nw",
-    "postinstall": "npx base-volta-off-of-nwjs",
+    "postinstall": "npx base-volta-off-of-nwjs@latest",
     "dev:ng": "ng serve",
     "dev:nw": "wait-on -c waitOn.config.json http://localhost:8964 && nw .",
     "build": "npm run build:ng && npm run build:nw",
