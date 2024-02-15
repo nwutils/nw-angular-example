@@ -6,6 +6,7 @@
 /dist-ng
 /dist-nw
 /tmp
+/out
 /out-tsc
 /bazel-out
 
