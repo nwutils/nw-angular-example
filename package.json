@@ -15,7 +15,7 @@
     "To turn spell checking off, remove the chromium-args from this file"
   ],
   "name": "nw-angular-example",
-  "version": "1.3.0",
+  "version": "17.2.0",
   "main": "http://localhost:4200",
   "node-remote": "http://localhost:4200",
   "window": {
