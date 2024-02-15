@@ -20,7 +20,7 @@
     "dev:nw": "wait-on -c waitOn.config.json http://localhost:4200 && nw .",
     "bld": "npm run bld:ng && npm run bld:nw",
     "bld:ng": "ng build --output-path ./out/ng",
-    "bld:nw": "nwbuild --outDir=./out/nw --managedManifest=./package.nw.json ./package.json ./**/* !./node_modules/**/*"
+    "bld:nw": "nwbuild --cacheDir=./node_modules/nw --outDir=./out/nw --managedManifest=./package.nw.json ./package.json ./out/ng/*"
   },
   "private": true,
   "volta": {
