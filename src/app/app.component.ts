@@ -15,10 +15,10 @@ export class AppComponent {
   title = 'nw-angular-example';
 
   versions = '' +
-    'You are running NW.js (v0.80.0-sdk)' +
-    'Node.js (v20.5.1), ' +
-    'Chromium (v117.0.5938.63), ' +
-    'and Angular (v16.3.1).';
+  'You are running NW.js (v' + window?.nw?.process?.versions?.nw + ' ' + window?.nw?.process?.versions['nw-flavor'] + '), ' +
+  'Node.js (v' + window?.nw?.process?.versions?.node + '), ' +
+  'Chromium (v' + window?.nw?.process?.versions?.chromium + '), ' +
+  'and Angular v17.2.0';
 
   public links: LinkType[];
 

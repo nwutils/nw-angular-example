@@ -25,6 +25,6 @@ jobs:
       - name: Check for linting errors
         run: npm run lint
       - name: Check for build errors
-        run: npm run build
+        run: npm run bld
       - name: Run test suite
         run: npm test

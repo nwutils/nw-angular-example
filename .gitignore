@@ -1,11 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/cache
 /dist
 /dist-ng
 /dist-nw
 /tmp
+/out
 /out-tsc
 /bazel-out
 
