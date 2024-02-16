@@ -1,6 +1,12 @@
 # NW.js Angular CLI example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8. Though dependencies have been updated since then. You'll likely want to clone from `main` rather than use the latest release. Here is the [diff between the latest release and main](https://github.com/nwutils/nw-angular-cli-example/compare/v1.3.0...main).
+Technology Colophon:
+
+- Angular v17
+- NW.js v0.84.0
+- Node v21.1.0
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8. Though dependencies have been updated since then. You'll likely want to clone from `main` rather than use the latest release. Here is the [diff between the latest release and main](https://github.com/nwutils/nw-angular-example/compare/v1.3.0...main).
 
 
 ![A Screenshot of the default app running on Windows](screenshot.png)
