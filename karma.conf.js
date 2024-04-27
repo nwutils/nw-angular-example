@@ -42,7 +42,7 @@ module.exports = async function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml'],
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     singleRun: true
   });
 };
