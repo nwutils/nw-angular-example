@@ -1,12 +1,21 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-const { findpath } = require("nw");
+let findpath = undefined;
 
-// const puppeteer = require('puppeteer');
-process.env.CHROME_BIN = findpath();
 
-module.exports = function (config) {
+module.exports = async function (config) {
+
+  await import('nw')
+  .then(async (module) => {
+    findpath = module.findpath;
+    process.env.CHROMIUM_BIN = await findpath('nwjs', { flavor: 'sdk' });
+  })
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
