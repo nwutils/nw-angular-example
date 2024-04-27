@@ -12,7 +12,7 @@ An example of running Angular with NW.js.
 1. `npm run test:unit` to run unit tests (figure out how to launch nwjs via karma)
 1. `npm run test:e2e`to test app via Selenium (figure out how to do this)
 1. `npm start` to run in development mode
-1. `npm run dev:ng` to run only Angular in a browser (add ``if (window.nw) {}` conditionals to skip desktop specific code)
+1. `npm run dev:ng` to run only Angular in a browser (add `if (window.nw) {}` conditionals to skip desktop specific code)
 1. `npm run build` to build desktop app
 
 ## Alternatives
