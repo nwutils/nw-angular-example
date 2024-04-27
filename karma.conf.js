@@ -1,20 +1,22 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-let findpath = undefined;
-
+const process = require('process');
 
 module.exports = async function (config) {
 
+  let findpath = undefined;
+
   await import('nw')
-  .then(async (module) => {
-    findpath = module.findpath;
-    process.env.CHROMIUM_BIN = await findpath('nwjs', { flavor: 'sdk' });
-  })
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+    .then((module) => {
+      findpath = module.findpath;
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exit(1);
+    });
+
+  process.env.CHROME_BIN = await findpath('nwjs', { flavor: 'sdk' });
 
   config.set({
     basePath: '',
@@ -40,7 +42,7 @@ module.exports = async function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml'],
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome'],
     singleRun: true
   });
 };
