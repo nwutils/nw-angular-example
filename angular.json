@@ -64,18 +64,18 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nw-angular-example:build:production"
+              "buildTarget": "nw-angular-example:build:production"
             },
             "development": {
-              "browserTarget": "nw-angular-example:build:development"
-            },
-            "defaultConfiguration": "development"
-          }
+              "buildTarget": "nw-angular-example:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nw-angular-example:build"
+            "buildTarget": "nw-angular-example:build"
           }
         },
         "test": {
@@ -94,8 +94,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "karmaConfig": "karma.conf.js"
+            "scripts": []
           }
         },
         "lint": {
