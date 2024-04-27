@@ -5,18 +5,9 @@ const process = require('process');
 
 module.exports = async function (config) {
 
-  let findpath = undefined;
+  const nw = await import('nw');
 
-  await import('nw')
-    .then((module) => {
-      findpath = module.findpath;
-    })
-    .catch((error) => {
-      console.error(error);
-      process.exit(1);
-    });
-
-  process.env.CHROME_BIN = await findpath('nwjs', { flavor: 'sdk' });
+  process.env.CHROME_BIN = await nw.findpath('nwjs', { flavor: 'sdk' });
 
   config.set({
     basePath: '',
