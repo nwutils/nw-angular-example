@@ -13,7 +13,7 @@
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
-    "test": "ng test",
+    "test": "ng test --watch=false",
     "start": "concurrently -k npm:dev:ng npm:dev:nw",
     "postinstall": "base-volta-off-of-nwjs",
     "dev:ng": "ng serve",
