@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import nodeManifest from '../../package.json';
+
 type LinkType = {
   title: string,
   url: string,
@@ -18,7 +20,7 @@ export class AppComponent {
   'You are running NW.js (v' + window?.nw?.process?.versions?.nw + ' ' + window?.nw?.process?.versions['nw-flavor'] + '), ' +
   'Node.js (v' + window?.nw?.process?.versions?.node + '), ' +
   'Chromium (v' + window?.nw?.process?.versions?.chromium + '), ' +
-  'and Angular v17.2.0';
+  'and Angular (v' + nodeManifest.version + ').';
 
   public links: LinkType[];
 
