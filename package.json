@@ -24,7 +24,7 @@
   },
   "private": true,
   "volta": {
-    "node": "21.1.0"
+    "node": "22.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.4",
@@ -48,8 +48,9 @@
     "@types/jasmine": "^5.1.4",
     "@types/node": "^20.12.11",
     "@types/nw.js": "^0.13.21",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@typescript-eslint/utils": "^7.11.0",
     "base-volta-off-of-nwjs": "^1.0.3",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
@@ -62,7 +63,7 @@
     "karma-coverage": "^2.2.1",
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.1.0",
-    "nw": "0.87.0-3",
+    "nw": "0.88.0-3",
     "nw-builder": "^4.7.4",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",
