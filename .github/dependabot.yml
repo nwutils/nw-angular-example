@@ -10,7 +10,6 @@ updates:
         patterns:
           - "*"
         exclude-patterns:
-          - "eslint"
           - "typescript"
           - "zone.js"
   - package-ecosystem: "github-actions"
