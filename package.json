@@ -24,6 +24,7 @@
   },
   "private": true,
   "volta": {
+    "npm": "10.8.2",
     "node": "22.2.0"
   },
   "devDependencies": {
