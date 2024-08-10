@@ -51,6 +51,7 @@
     "@types/nw.js": "^0.90.0",
     "@typescript-eslint/eslint-plugin": "^8.0.1",
     "@typescript-eslint/parser": "^8.0.1",
+    "@typescript-eslint/types": "^8.0.1",
     "@typescript-eslint/utils": "^8.0.1",
     "base-volta-off-of-nwjs": "^1.0.3",
     "concurrently": "^8.2.2",
