@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.7
       - name: Use Node version defined in manifest
-        uses: volta-cli/action@v4.1.1
+        uses: volta-cli/action@v4.2.1
       - name: Node.js version
         run: node -v
       - name: npm version
