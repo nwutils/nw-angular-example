@@ -9,9 +9,6 @@ updates:
       npm:
         patterns:
           - "*"
-        exclude-patterns:
-          - "typescript"
-          - "zone.js"
   - package-ecosystem: "github-actions"
     directory: ".github/workflows"
     schedule:
