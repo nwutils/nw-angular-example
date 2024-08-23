@@ -64,13 +64,13 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "nw": "0.90.0",
+    "nw": "0.91.0",
     "nw-builder": "^4.8.1",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "typescript": "~5.5.4",
-    "wait-on": "^7.2.0",
-    "zone.js": "~0.14.7"
+    "wait-on": "^8.0.0",
+    "zone.js": "~0.15.0"
   },
   "chromium-args": "--enable-spell-checking"
 }
