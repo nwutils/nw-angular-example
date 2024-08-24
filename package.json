@@ -55,7 +55,7 @@
     "@typescript-eslint/utils": "^8.0.1",
     "base-volta-off-of-nwjs": "^1.0.3",
     "concurrently": "^8.2.2",
-    "eslint": "^9.9.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-jsdoc": "^50.0.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "jasmine-core": "~5.2.0",
@@ -64,13 +64,13 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "nw": "0.90.0",
+    "nw": "0.91.0",
     "nw-builder": "^4.8.1",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "typescript": "~5.5.4",
-    "wait-on": "^7.2.0",
-    "zone.js": "~0.14.7"
+    "wait-on": "^8.0.0",
+    "zone.js": "~0.14.10"
   },
   "chromium-args": "--enable-spell-checking"
 }

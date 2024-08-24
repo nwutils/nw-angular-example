@@ -21,7 +21,7 @@ jobs:
       - name: npm version
         run: npm -v
       - name: Install dependencies
-        run: npm ci
+        run: npm i
       - name: Check for linting errors
         run: npm run lint
       - name: Check for build errors

@@ -17,3 +17,5 @@ updates:
       gha:
         patterns:
           - "*"
+        exclude-patterns:
+          - eslint
