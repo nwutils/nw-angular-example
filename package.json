@@ -45,7 +45,7 @@
     "@angular/platform-browser": "~18.2.0",
     "@angular/platform-browser-dynamic": "~18.2.0",
     "@angular/router": "~18.2.0",
-    "@types/chrome": "^0.0.271",
+    "@types/chrome": "^0.0.272",
     "@types/jasmine": "~5.1.4",
     "@types/node": "^22.2.0",
     "@types/nw.js": "^0.91.0",
