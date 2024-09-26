@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-2022
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.0
       - name: Use Node version defined in manifest
         uses: volta-cli/action@v4.2.1
       - name: Node.js version
