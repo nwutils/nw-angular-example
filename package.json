@@ -19,7 +19,8 @@
     "dev:nw": "wait-on -c waitOn.config.json http-get://localhost:4200 && nw .",
     "bld": "npm run bld:ng && npm run bld:nw",
     "bld:ng": "ng build --output-path ./out/ng",
-    "bld:nw": "nwbuild --cacheDir=./node_modules/nw --outDir=./out/nw --managedManifest=./package.nw.json \"./package.json ./out/ng/**/*\""
+    "bld:nw": "nwbuild --cacheDir=./node_modules/nw --outDir=./out/nw --managedManifest=./package.nw.json \"./package.json ./out/ng/**/*\"",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -40,8 +41,10 @@
     "@angular/compiler-cli": "^19.2.0",
     "@types/jasmine": "~5.1.0",
     "@types/nw.js": "^0.92.0",
+    "angular-eslint": "20.3.0",
     "base-volta-off-of-nwjs": "^1.0.5",
     "concurrently": "^9.2.1",
+    "eslint": "^9.35.0",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -51,6 +54,7 @@
     "nw": "^0.104.0",
     "nw-builder": "^4.15.0",
     "typescript": "~5.7.2",
+    "typescript-eslint": "8.40.0",
     "wait-on": "^9.0.1"
   },
   "volta": {
