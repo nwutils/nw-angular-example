@@ -1,0 +1,30 @@
+name: gha
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: windows-2022
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+      - name: Use Node version defined in manifest
+        uses: volta-cli/action@v4.2.1
+      - name: Node.js version
+        run: node -v
+      - name: npm version
+        run: npm -v
+      - name: Install dependencies
+        run: npm i
+      - name: Check for linting errors
+        run: npm run lint
+      - name: Check for build errors
+        run: npm run bld
+      - name: Run test suite
+        run: npm test

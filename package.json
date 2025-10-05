@@ -1,12 +1,25 @@
 {
-  "name": "app",
+  "name": "nw-angular-example",
   "version": "0.0.0",
+  "main": "http://localhost:4200",
+  "node-remote": "http://localhost:4200",
+  "window": {
+    "width": 960,
+    "height": 600,
+    "min_width": 700,
+    "min_height": 500,
+    "icon": "assets/icon.png"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start": "concurrently -k npm:dev:ng npm:dev:nw",
+    "postinstall": "base-volta-off-of-nwjs",
+    "dev:ng": "ng serve",
+    "dev:nw": "wait-on -c waitOn.config.json http-get://localhost:4200 && nw .",
+    "bld": "npm run bld:ng && npm run bld:nw",
+    "bld:ng": "ng build --output-path ./out/ng",
+    "bld:nw": "nwbuild --cacheDir=./node_modules/nw --outDir=./out/nw --managedManifest=./package.nw.json \"./package.json ./out/ng/**/*\""
   },
   "private": true,
   "dependencies": {
@@ -26,12 +39,22 @@
     "@angular/cli": "^19.2.17",
     "@angular/compiler-cli": "^19.2.0",
     "@types/jasmine": "~5.1.0",
+    "@types/nw.js": "^0.92.0",
+    "base-volta-off-of-nwjs": "^1.0.5",
+    "concurrently": "^9.2.1",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "nw": "^0.104.0",
+    "nw-builder": "^4.15.0",
+    "typescript": "~5.7.2",
+    "wait-on": "^9.0.1"
+  },
+  "volta": {
+    "npm": "11.6.1",
+    "node": "24.7.0"
   }
 }
