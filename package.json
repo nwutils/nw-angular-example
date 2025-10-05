@@ -54,7 +54,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "nw": "^0.104.0-sdk",
     "nw-builder": "^4.16.0",
-    "typescript": "~5.7.2",
+    "typescript": "~5.9.3",
     "typescript-eslint": "8.40.0",
     "wait-on": "^9.0.1"
   },
