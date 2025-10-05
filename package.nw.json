@@ -1,5 +1,5 @@
 {
     "name": "nw-angular-example",
     "version": "0.0.0",
-    "main": "out/ng/index.html"
+    "main": "out/ng/browser/index.html"
 }

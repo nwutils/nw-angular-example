@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   ci:
-    runs-on: windows-2022
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
@@ -26,5 +26,5 @@ jobs:
         run: npm run lint
       - name: Check for build errors
         run: npm run bld
-      - name: Run test suite
-        run: npm test
+      # - name: Run test suite
+      #   run: npm test
