@@ -7,8 +7,7 @@
     "width": 960,
     "height": 600,
     "min_width": 700,
-    "min_height": 500,
-    "icon": "assets/icon.png"
+    "min_height": 500
   },
   "scripts": {
     "ng": "ng",
