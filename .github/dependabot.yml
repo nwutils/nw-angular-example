@@ -4,7 +4,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "."
     schedule:
-      interval: "daily"
+      interval: "monthly"
     versioning-strategy: "widen"
     groups:
       npm:
@@ -16,7 +16,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: ".github/workflows"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     groups:
       gha:
         patterns:
