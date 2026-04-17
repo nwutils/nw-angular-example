@@ -5,7 +5,7 @@ updates:
     directory: "."
     schedule:
       interval: "monthly"
-    versioning-strategy: "widen"
+    versioning-strategy: "increase"
     groups:
       npm:
         patterns:
